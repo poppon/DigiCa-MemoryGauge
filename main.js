@@ -40,6 +40,7 @@ window.onload = function() {
     canvas.addEventListener('mousemove', mouseMove, true);
   	canvas.addEventListener('mousedown', mouseDown, true);
     canvas.addEventListener('mouseup', mouseUp, true);
+    document.addEventListener("mousewheel", (e)=>{e.preventDefault();}, { passive: false });
     document.addEventListener("touchmove", (e)=>{e.preventDefault();}, { passive: false });
     init();
 
