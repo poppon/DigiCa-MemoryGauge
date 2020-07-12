@@ -34,6 +34,9 @@ let pos = {x:0, y:0};
 
 
 window.onload = function() {
+    setTimeout(function(){
+        window.scrollTo(0,1);
+    }, 1);
     /* 初期化 */
     canvas.width = SCREEN_WIDTH;
     canvas.height = SCREEN_HEIGHT;
